@@ -1,3 +1,29 @@
+Synapse 0.33.4rc1 (2018-08-22)
+==============================
+
+Features
+--------
+
+- Support profile API endpoints on workers ([\#3659](https://github.com/matrix-org/synapse/issues/3659))
+- Server notices for resource limit blocking ([\#3680](https://github.com/matrix-org/synapse/issues/3680))
+- Allow guests to use /rooms/:roomId/event/:eventId ([\#3724](https://github.com/matrix-org/synapse/issues/3724))
+
+
+Bugfixes
+--------
+
+- Fix error collecting prometheus metrics when run on dedicated thread due to threading concurrency issues ([\#3722](https://github.com/matrix-org/synapse/issues/3722))
+
+
+Internal Changes
+----------------
+
+- Refactor state module to support multiple room versions ([\#3673](https://github.com/matrix-org/synapse/issues/3673))
+- Split the state_group_cache into member and non-member state events (and so speed up LL /sync) ([\#3726](https://github.com/matrix-org/synapse/issues/3726))
+- Log failure to authenticate remote servers as warnings (without stack traces) ([\#3727](https://github.com/matrix-org/synapse/issues/3727))
+- Fix minor spelling error in federation client documentation. ([\#3735](https://github.com/matrix-org/synapse/issues/3735))
+
+
 Synapse 0.33.3 (2018-08-22)
 ===========================
 
